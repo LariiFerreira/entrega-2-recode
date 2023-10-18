@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+html{
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: inherit;
+    overflow-x: hidden;
+}
+
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+header.rolagem{
+    background-color: #fff;
+    padding: 20px 4%;
+}
+
+header.rolagem a, header.rolagem{
+    color: gray;
+}
+
+header i{
+font-size: 30px;
+color: blue;
+}
+
+header ul{
+list-style-type: none;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a{
+    color: gray;
+    text-decoration: none;
+    font-weight: bolder;
+
+}
+
+.btn-contato button{
+ width: 120px;
+ height: 40px;
+ border: 0;
+ background-color: #fff1da;
+ color: black;
+ cursor: pointer;
+ transition: .2s;
+}
+
+
+.banner{
+    height: 100vh;
+    background-image: url(../imagens/roma-ao-por-do-sol-italia.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.banner h1{
+font-size: 4em;
+color: #fff;
+} 
+
+
+.frase{ 
+    padding: 0px 50px 50px 50px;
+    color: black;
+    background-color: #fff1da;
+}
+
+
+
+.h1-color-family{
+    text-align: center;
+}
+
+.destinos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 15px;
+    margin-top: 20px;
+    padding: 0px 10px 0px 10px;
+    background-color: #fff1da;
+}
+
+.destinos-area{
+    background-color: #fff1da;
+    padding-top: 50px;
+}
+
+div.image-area {
+    height: 70%;
+    position: relative;
+}
+
+div.image-area > img{
+    width: 100%;
+    height: 100%;
+   
+}
+
+figcaption {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table{
+    margin-top: 100px;  
+}
+
+.titulo{
+    margin-top: 60px;  
+    font-size: 200%;
+}
+
+
+
+ .nome-destino{
+    font: bolder 2em Arial;
+    color: white;
+}
+
+
+.footer{
+    background-color:#181E4b;
+    color: #fff;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_container{
+    width: 90%;
+}
+.footer_content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.footer_rights{
+    display: flex;
+    justify-content: center;
+}
+
+.footer_link:link{
+    color: #fff;
+}
+
+.footer_link:visited{
+    color: #fff;
+}
+
+.faq-area{
+    width: 100%;
+    padding: 0px 20% 0px 20%;
+    margin: 50px 0px 50px 0px;
+}
+
+@media (max-width: 910px) {
+    .footer {
+        height: 350px;
+    }
+    .footer_content{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer_data {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+}
+
+@media (max-width: 770px) {
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 450px) {
+    .footer {
+        height: 400px;
+    }
+}
+
+@media (max-width:475px) {
+    .banner h1{
+        font-size: 3em;
+        color: #fff;
+        } 
+}
